@@ -1,38 +1,108 @@
+@font-face {
+	font-family: 'Ubuntu-Bold'; /* Choose a unique name for your font */
+	src: url('Ubuntu-Bold.ttf') format('truetype'); /* Specify the path to your .ttf file */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Ubuntu-Light'; /* Choose a unique name for your font */
+	src: url('Ubuntu-Light.ttf') format('truetype'); /* Specify the path to your .ttf file */
+	font-weight: normal;
+	font-style: normal;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #89929B;
+	opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #89929B;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: #89929B;
+}
+
 .App {
-  text-align: center;
+	color: white;
+	text-align: center;
+	padding: 30px;
+	font-family: 'Ubuntu-Bold', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 600px;
+  height: 500px;
+  background-color: #21262D;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  width: 90px;
+  height: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+	display: flex;
+	align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.formLinkRepositoryContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputLinkRepository {
+	height: 40px;
+	width: 100%;
+	color: white;
+	background-color: #161B22;
+	border: none;
+	border-radius: 10px;
+	margin-top: 20px;
+	font-family: 'Ubuntu-Bold', sans-serif;
+}
+
+.buttonGetSummary {
+	height: 40px;
+	width: 130px;;
+	background-color: #7ce38b;
+	color: #161B22;
+	border: none;
+	border-radius: 10px;
+	margin-top: 10px;
+	font-family: 'Ubuntu-Bold', sans-serif;
+}
+
+.summaryContainer {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.titleSummary {
+	font-family: 'Ubuntu-Bold', sans-serif;
+}
+
+.summaryContent {
+	font-family: 'Ubuntu-Light', sans-serif;
+	text-align: left;
+	font-size: 15px;
+	background-color: transparent;
+	width: 100%;
+	height: auto;
+	overflow-y: scroll;
+	color: white;
+	border: none;
+	resize: none;
+}
+
+.summaryContent::-webkit-scrollbar { width: 0 !important }
+.summaryContent { overflow: -moz-scrollbars-none; }
+.summaryContent { -ms-overflow-style: none; }
+
+body{
+  	margin: 0px;
 }
