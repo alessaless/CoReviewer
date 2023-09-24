@@ -1,46 +1,17 @@
-# Getting Started with Create React App
+<div align = "center">
+<img src="https://i.imgur.com/SvIwWAN.png" alt="logo" width="400"/>
+<h2>Università degli Studi di Salerno</h2>
+Progetto Tesi Triennale </strong>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br><br>
 
-## Available Scripts
+<h2>Introduzione</h2>
 
-In the project directory, you can run:
+CoReviewer è un'estensione per Web Browser che permette di velocizzare il processo di Code Review, nello specifico il reviewer otterrà un summary delle modifiche effettuate alla codebase nell'ultimo commit.
 
-### `npm start`
+<h2>Ambito del progetto</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**CoReviewer** è un'estensione che permette di ottenere un breve summary delle modifiche fatte ad una codebase semplicemente mediante il link alla repository. La generazione di un summary permette al reviewer di velocizzare le attività di code review, avendo a disposizione l'elenco delle modifiche e degli effetti di queste sul codice che si sta analizzando. <br>
+La generazione del summary è affidata al modello linguistico LLaMA 2 di Meta. Per l'ambito del progetto è stata utilizzata la versione a 7 miliardi di parametri.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
