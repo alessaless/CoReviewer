@@ -51,10 +51,9 @@ def getSummary():
     os.chdir(working_directory)
 
     commitData = getLastCommitData(linkRepo)
-    promptPerLLama = "tell me what happened in those commits " + commitData
+    promptPerLLama = "tell me what happened in these commits " + commitData
 
 
-    # to do: capire meglio questo if, forse inutile. la code review deve avvenire anche se è il primo commit ma il nostro script che ci darà???
     if commitData != "No Data": 
         command = ["./main",
                 "-m", "./models/7B/ggml-model-q4_0.bin",
